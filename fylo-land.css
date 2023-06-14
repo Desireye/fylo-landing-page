@@ -5,11 +5,12 @@
 }
 body{
     min-height: 100vh;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 main{
     display: flex;
@@ -17,6 +18,8 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+/*nav*/
 nav{
     display: flex;
     padding: 2% 5%;
@@ -34,6 +37,8 @@ nav .links a{
     text-decoration: none;
     color: hsl(238, 22%, 44%);
 }
+
+/*get started*/
 .get-started{
     display: flex;
     justify-content: space-around;
@@ -87,6 +92,8 @@ button:hover{
     background:  hsl(224, 83%, 66%);
     cursor: pointer;
 }
+
+/*productive*/
 .curve{
     background: url(./images/\/bg-curve-desktop.svg);
     width: 100%;
@@ -123,6 +130,8 @@ button:hover{
 .productive-section a img{
     vertical-align: middle;
 }
+
+/*testimonial section inside productive*/
 .productive-section .testimonial{
     width: 23rem;
     height: 16rem;
@@ -172,6 +181,8 @@ button:hover{
     width: 40rem;
     height: 30rem;
 }
+
+/*early access*/
 .early-access{
     background: hsl(238, 22%, 44%);
     padding: 5%;
@@ -196,6 +207,8 @@ button:hover{
 }
 .early-access .form-2{
     display: flex;
+    /* align-self: center; */
+    margin: auto;
     flex-direction: column;
     margin-top: 0;
     margin-right: 5%;
@@ -209,6 +222,8 @@ button:hover{
 .early-access .form-2 button{
     padding: 0.9rem;
 }
+
+/*footer*/
 footer{
     background: hsl(243, 87%, 12%);
     height: 20rem;
@@ -254,18 +269,20 @@ footer p{
 .socials{
     margin-top: 5%;
     display: flex;
+    gap: 0.7rem;
 }
 .fa{
     padding: 9%;
-    height: 3rem;
-    width: 3.5rem;
-    padding-bottom: 20%;
-    margin-left: 5%;
+    height: 3.3rem;
+    width: 3.3rem;
+    align-items: center;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     border: 1px solid white;
 }
+
+/*my attribution*/
 .attribution{
     position: relative;
     margin-top: 2%;
@@ -283,10 +300,12 @@ footer p{
 }
 
 /* Responsiveness */
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 30rem) {
     body{
         overflow-x: hidden;
     }
+
+    /*nav*/
     nav{
         margin-bottom: 30%;
         padding: 5%;
@@ -299,6 +318,8 @@ footer p{
         font-size: 0.7rem;
         margin-top: 2%;
     }
+
+    /*get started*/
     .get-started{
         flex-direction: column-reverse;
         text-align: center;
@@ -332,6 +353,8 @@ footer p{
         width: 20rem;
         padding: 4%;
     }
+
+    /*productive*/
     .curve{
         background: url(./images/bg-curve-mobile.svg);
     }
@@ -384,9 +407,12 @@ footer p{
         width: 1rem;
         height: 1rem;
     }
+
+    /*early access*/
     .early-access{
         flex-direction: column;
         text-align: center;
+        gap: 12.5rem;
         height: 24rem;
         padding: 15% 10%;
     }
@@ -404,17 +430,17 @@ footer p{
     }
     .early-access .form-2{
         gap: 1rem;
-        margin-top: -60%;
-        padding-left: 3%;
-        padding-right: 0;
+        margin-top: -50%;
+        position: relative;
     }
     .early-access  input, button{
-        width: 17rem;
-        height: 2.5rem;
+        width: 18rem;
         padding: 2%;
     }
+
+    /*footer*/
     footer{
-        height: 45rem;
+        height: 50rem;
         padding: 15% 10%;
     }
     footer p{
