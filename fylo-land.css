@@ -1,9 +1,9 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
+body {
     min-height: 100vh;
     max-width: 100%;
     display: flex;
@@ -12,7 +12,7 @@ body{
     align-items: center;
     overflow-x: hidden;
 }
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,12 +20,12 @@ main{
 }
 
 /*nav*/
-nav{
+nav {
     display: flex;
     padding: 2% 5%;
     width: 100%;
 }
-nav .links{
+nav .links {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     margin-left: auto;
@@ -33,52 +33,52 @@ nav .links{
     justify-content: space-around;
     width: 25%;
 }
-nav .links a{
+nav .links a {
     text-decoration: none;
     color: hsl(238, 22%, 44%);
 }
 
 /*get started*/
-.get-started{
+.get-started {
     display: flex;
     justify-content: space-around;
     margin-top: 7%;
     margin-bottom: 7%;
 }
-.get-started img{
+.get-started img {
     width: 45rem;
     height: 30rem;
     margin-left: -17%;
     margin-top: -12%;
 }
-.get-started .text{
+.get-started .text {
     padding: 2% 5%;
     padding-right: 13%;
     font-family: 'Open Sans', sans-serif;
 }
-.get-started .text h1{
+.get-started .text h1 {
     font-size: 2.2rem;
     color: hsl(243, 87%, 12%);
     line-height: 3rem;
     font-weight: 700;
 }
-.get-started .text p{
+.get-started .text p {
     font-weight: 400;
     margin-top: 2%;
     font-size: 1rem;
     color: hsl(243, 87%, 12%);
 }
-.get-started form{
+.get-started form {
     display: flex;
     gap: 2rem;
     margin-top: 5%;
 }
-input{
+input {
     width: 19rem;
     padding: 2%;
     border-radius: 0.2rem;
 }
-button{
+button {
     font-family: 'Raleway', sans-serif;
     width: 10rem;
     padding: 2.3%;
@@ -88,51 +88,60 @@ button{
     border-radius: 0.2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-button:hover{
+button:hover,
+button:focus,
+button:active {
     background:  hsl(224, 83%, 66%);
     cursor: pointer;
 }
+#check-el,
+#check-el-2 {
+    color: red;
+    font-size: 0.8rem;
+}
 
 /*productive*/
-.curve{
+.curve {
     background: url(./images/\/bg-curve-desktop.svg);
     width: 100%;
     background-repeat: no-repeat;
     margin-bottom: -1.5%;
 }
-.productive-section{
+.productive-section {
     padding: 5%;
     display: flex;
     background: hsl(250deg 75% 98.43%);
 }
-.productive-section .text h2{
+.productive-section .text h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 5%;
 }
-.productive-section .text p{
+.productive-section .text p {
     margin-top: 3%;
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
     padding-right: 25%;
 }
-.productive-section a{
+.productive-section a {
     text-decoration: none;
     color: hsl(170, 45%, 43%);
     border-bottom: 1px solid hsl(170, 45%, 43%);
     padding-bottom: 0.6%;
 }
-.productive-section a:hover{
+.productive-section a:hover,
+.productive-section a:active,
+.productive-section a:focus {
     cursor: pointer;
     color: hsl(170, 62%, 61%);
     border-bottom: 1px solid hsl(170, 62%, 61%);
 }
-.productive-section a img{
+.productive-section a img {
     vertical-align: middle;
 }
 
 /*testimonial section inside productive*/
-.productive-section .testimonial{
+.productive-section .testimonial {
     width: 23rem;
     height: 16rem;
     background: white;
@@ -143,88 +152,87 @@ button:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding-right: -9%;
 }
-.testimonial .quote{
+.testimonial .quote {
     width: 1.2rem;
     height: 1.2rem;
     margin-bottom: 1%;
 }
-.testimonial b{
+.testimonial b {
     font-size: 2rem;
 }
-.productive-section .testimonial p{
+.productive-section .testimonial p {
     font-size: 0.9rem;
     line-height: 1.6rem;
     padding-right: 0%;
 }
-.testimonial .profile{
+.testimonial .profile {
     display: flex;
     margin-top: 5%;
 }
-.testimonial .info{
+.testimonial .info {
     display: flex;
     flex-direction: column;
     margin-left: 3%;
     margin-top: 1.5%;
 }
-.testimonial .span-1{
+.testimonial .span-1 {
     font-weight: 700;
     font-size: 0.8rem;
 }
-.testimonial .span-2{
+.testimonial .span-2 {
     font-size: 0.7rem;
 }
-.testimonial div img{
+.testimonial div img {
     width: 2.5rem;
     border-radius: 50%;
 }
-.productive-section .illustration-2 img{
+.productive-section .illustration-2 img {
     width: 40rem;
     height: 30rem;
 }
 
 /*early access*/
-.early-access{
+.early-access { 
     background: hsl(238, 22%, 44%);
     padding: 5%;
     display: flex;
     gap: 15rem;
     height: 17rem;
 }
-.early-access h3{
+.early-access h3 {
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
     color: white;
 }
-.early-access p{
+.early-access p {
     margin-top: 2%;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
 }
-.early-access .text{
+.early-access .text {
     padding-right: 15%;
 }
-.early-access .form-2{
+.early-access .form-2 {
     display: flex;
     /* align-self: center; */
     margin: auto;
     flex-direction: column;
     margin-top: 0;
     margin-right: 5%;
-    gap: 1rem;
 }
-.early-access .form-2 input{
+.early-access .form-2 input {
     padding: 0.9rem;
     border: none;
     border-radius: 0.2rem;
 }
-.early-access .form-2 button{
+.early-access .form-2 button {
     padding: 0.9rem;
 }
 
 /*footer*/
-footer{
+footer {
     background: hsl(243, 87%, 12%);
     height: 20rem;
     padding: 5%;
@@ -232,46 +240,48 @@ footer{
     bottom: 1%;
     font-family: 'Open Sans', sans-serif;
 }
-.main-footer{
+.main-footer {
     display: flex;
     justify-content: space-between;
 }
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
-.main-footer a:hover{
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
     color:hsl(224, 93%, 58%);
     border-color: hsl(224, 93%, 58%);
 }
-footer p{
+footer p {
     margin-bottom: 15%;
 }
-.logo{
+.logo {
     display: flex;
     flex-direction: column;
     width: 16%;
 }
-.logo .image{
+.logo .image {
     margin-bottom: 15%;
     width: 8rem;
 }
-.logo span{
+.logo span {
     margin-bottom: 15%;
 }
-.logo .icon{
+.logo .icon {
     height: 0.9rem;
     margin-right: 3%;
 }
-.about-us, .contact-us{
+.about-us, .contact-us {
     margin-top: 5%;
 }
-.socials{
+.socials {
     margin-top: 5%;
     display: flex;
     gap: 0.7rem;
 }
-.fa{
+.fa {
     padding: 9%;
     height: 3.3rem;
     width: 3.3rem;
@@ -283,7 +293,7 @@ footer p{
 }
 
 /*my attribution*/
-.attribution{
+.attribution {
     position: relative;
     margin-top: 2%;
     text-align: center;
@@ -291,182 +301,183 @@ footer p{
     color: hsl(170, 45%, 43%);
     font-family: 'Raleway', sans-serif;
 }
-.attribution a{
+.attribution a {
     color: hsl(224, 93%, 58%);
     text-decoration: overline;
 }
-.attribution a:hover{
+.attribution a:hover {
     color: white;
 }
 
 /* Responsiveness */
 @media screen and (max-width: 30rem) {
-    body{
+    body {
         overflow-x: hidden;
     }
 
     /*nav*/
-    nav{
+    nav {
         margin-bottom: 30%;
         padding: 5%;
     }
-    nav img{
+    nav img {
         width: 5rem;
     }
-    nav .links{
+    nav .links {
         width: 55%;
         font-size: 0.7rem;
         margin-top: 2%;
     }
 
     /*get started*/
-    .get-started{
+    .get-started {
         flex-direction: column-reverse;
         text-align: center;
         gap: 2rem;
         margin-bottom: 21%;
     }
-    .get-started img{
+    .get-started img {
         width: 18rem;
         height: 14rem;
         margin-left: 0;
     }
-    .get-started .text{
+    .get-started .text {
         padding: 2% 5%;
     }
-    .get-started .text h1{
+    .get-started .text h1 {
         font-size: 1.5rem;
         line-height: 1.9rem;
     }
-    .get-started .text p{
+    .get-started .text p {
         font-size: 0.89rem;
         margin-top: 7%;
         margin-bottom: 9%;
         padding: 5%;
         line-height: 1.3rem;
     }
-    .get-started form{
+    .get-started form {
         flex-direction: column;
         gap: 1rem;
     }
-    .get-started input, .get-started button{
+    .get-started input, .get-started button {
         width: 20rem;
         padding: 4%;
     }
 
     /*productive*/
-    .curve{
+    .curve {
         background: url(./images/bg-curve-mobile.svg);
     }
-    .productive-section{
+    .productive-section {
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
         gap: 4rem;
     }
-    .productive-section .illustration-2 img{
+    .productive-section .illustration-2 img {
         width: 18rem;
         height: 15rem;
         margin-top: 9%;
     }
-    .productive-section .text p{
+    .productive-section .text p {
         text-align: left;
         padding-right: 0%;
         font-size: 0.87rem;
     }
-    .productive-section .text h2{
+    .productive-section .text h2 {
         font-size: 1.1rem;
     }
-    .productive-section .text .link{
+    .productive-section .text .link {
         text-align: center;
         margin-bottom: 11%;
         margin-top: 11%;
     }
-    .productive-section .testimonial{
+    .productive-section .testimonial {
         width: 20.2rem;
         height: 13rem;
         padding: 8%;
         margin-bottom: 13%;
         display: grid;
     }
-    .productive-section .testimonial p{
+    .productive-section .testimonial p {
         font-size: 0.76rem;
         line-height: 1.3rem;
     }
-    .productive-section .testimonial img{
+    .productive-section .testimonial img {
         width: 2rem;
     }
-    .productive-section .profile .info{
+    .productive-section .profile .info {
         text-align: left;
         margin-top: -0.3%;
     }
-    .profile .span-2{
+    .profile .span-2 {
         font-size: 0.55rem;
     }
-    .productive-section .testimonial .quote{
+    .productive-section .testimonial .quote {
         width: 1rem;
         height: 1rem;
     }
 
     /*early access*/
-    .early-access{
+    .early-access {
         flex-direction: column;
         text-align: center;
         gap: 12.5rem;
         height: 24rem;
         padding: 15% 10%;
     }
-    .early-access .text{
+    .early-access .text {
         width: 100%;
         padding: 0;
         margin-bottom: -10%;
     }
-    .early-access h3{
+    .early-access h3 {
         font-size: 1.1rem;
         margin-bottom: 7%;
     }
-    .early-access p{
+    .early-access p {
         font-size: 0.9rem;
     }
-    .early-access .form-2{
+    .early-access .form-2 {
         gap: 1rem;
         margin-top: -50%;
         position: relative;
     }
-    .early-access  input, button{
+    .early-access  input, 
+    button {
         width: 18rem;
         padding: 2%;
     }
 
     /*footer*/
-    footer{
+    footer {
         height: 50rem;
         padding: 15% 10%;
     }
-    footer p{
+    footer p {
         margin-bottom: 5%;
     }
-    .main-footer{
+    .main-footer {
         flex-direction: column;
         gap: 2rem;
     }
-    .logo .image{
+    .logo .image {
         width: 10rem;
     }
-    .logo{
+    .logo {
         width: 100%;
     }
-    .logo span{
+    .logo span {
         margin-bottom: 5%;
     }
-    .fa{
+    .fa {
         padding: 2%;
         padding-bottom: 6%;
         padding-top: 3.9%;
         width: 3rem;
         height: 3rem;
     }
-    .socials{
+    .socials {
         justify-content: center;
         margin-bottom: 13%;
     }
